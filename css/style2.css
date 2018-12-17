@@ -152,16 +152,13 @@
 
 .jumbotron{
     text-align: center;
-    background-image: url("C:\\test\\assets\\background6.jpg")
+    background-image: url("assets\\background6.jpg")
 
 }
 
 
 
-@font-face {
-  font-family: BilboRegular;
-  src: url("fonts\\partyBusiness.ttf") format("truetype");
-}
+
 
 
 
@@ -182,19 +179,11 @@ p{
 }
 
 body{
-    background-image: url("C:\\test\\assets\\background6.jpg");
+    background-image: url("assets\\background6.jpg");
     
 }
 
-@font-face {
-  font-family: Snell;
-  src: url("fonts//snellbtR.otf") format("opentype");
-}
 
-@font-face{
-    font-family: SnellB;
-    src: url("fonts//snellbtB.otf") format("opentype");
-}
 
 
 
