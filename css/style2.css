@@ -6,23 +6,19 @@
     cursor: pointer;
 }
 
-.entImg{
-    transform:rotate(90deg);
-}
+ 
 .entImg2{
-    transform: rotate(90deg);
+    
     height: 50%;
     width: 50%;
     margin-left: 30%;
     padding-bottom: 30%;
 }
-#caroler2{
-    transform: rotate(90deg);
-}
+
 
 
 .sheep2{
-    transform: rotate(90deg);
+    
     width:auto;
     height: auto;
     max-width: 500px;
@@ -152,7 +148,7 @@
 
 .jumbotron{
     text-align: center;
-    background-image: url("../../assets/background6.jpg")
+    background-image: url("../assets/background6.jpg")
 
 }
 
@@ -179,7 +175,7 @@ p{
 }
 
 body{
-    background-image: url('../../assets/background6.jpg');
+    background-image: url('../assets/background6.jpg');
     
 }
 
@@ -335,7 +331,7 @@ img.demo {
     
     margin-left: 50%;
     margin-top: -60%;
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
 }
 
 .active,
@@ -345,7 +341,7 @@ img.demo {
 
 img.hover-shadow {
   transition: 0.3s;
-    transform: rotate(90deg);
+    /*transform: rotate(90deg);*/
 }
 
 .hover-shadow:hover {
