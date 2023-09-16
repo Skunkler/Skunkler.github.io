@@ -1,8 +1,8 @@
 body, html {
-    background-color: #1993E0;
+    background-color: #36454F;
 }
 
-p 
+p, h3 
 {
     color: white;
 }
@@ -50,3 +50,29 @@ ul li a:hover::after {
 * {
     box-sizing: border-box;
 }
+.card {
+    box-shadow: 0 8px 12px 8px rgba(0,0,0,0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 5%;
+}
+
+.cardColumn {
+    float: left;
+    width: 75%;
+    padding: 0 10px;
+}
+.cardText{
+    color: black;
+}
+.cardRow {
+    margin: 0 -5px;
+}
+
+    .cardRow:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
