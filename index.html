@@ -4,162 +4,69 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Stop Link 101</title>
-    <meta name="description" content="A site for information regarding the proposed Indiana State Route 101 project.">
+    <title>Northwest Dynamics INC</title>
+    <meta name="description" content="Business website for Northwest Dynamics Inc.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
           rel="stylesheet"
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
           crossorigin="anonymous" />
+
     <link href="style.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+            integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+            crossorigin="anonymous"></script>
+
 </head>
-    <body>
-        <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #cc0202;">
-            <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Stop Link 101</a>
-                    <button class="navbar-toggler" data-toggle="collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="float:right;" aria-controls="">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" onclick='showContent("#about")' aria-current="page" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" target="_blank" href="https://stoplink101.com">View Proposed Routes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" onclick='showContent("#budget")' href="#">Budget</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" onclick='showContent("#signs")' href="#">Sign Drop Offs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" onclick='showContent("#testimonials")' href="#">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" onclick='showContent("#upcoming")' href="#">Upcoming Events</a>
-                        </li>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars" style="float: right;"></i>
-                        </a>
-                    </ul>
-                </div>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <p class="navbar-brand">Northwest Dynamics Inc.</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" id="#aboutLink" onclick="selectedLink(this, '#about')" href="#">About</a>
+                <a class="nav-item nav-link" id="#servicesLink" onclick="selectedLink(this, '#services')" href="#">Services</a>
+                <a class="nav-item nav-link" id="#certificationsLink" onclick="selectedLink(this, '#certifications')" href="#">Certifications</a>
+                <a class="nav-item nav-link" id="#contactLink" onclick="selectedLink(this, '#contact')" href="#">Contact</a>
             </div>
-        </nav>
-        <div class="container-fluid">
-            <div class="page-header">
-                <h1 id="header" class="text-center">About Stop Link 101</h1>
-            </div>
-            <div>
-
-                <div id="#about">
-                    <br />
-                    <img src="assets/proxy-image.jpg" class=" img-fluid rounded mx-auto d-block" alt="Girl in a jacket" width="500" height="600">
-                    <h3 class="text-center">What is "stop link101"?</h3>
-                    <p class="text-center">
-                        If you are looking us up for the first time, thank you for checking us out! We are a group of individuals affected by the link101 corridor project
-                        in district 43 in South Eastern Indiana.
-                    </p>
-                    <p class="text-center">
-                        The link101 project (put forth by Governor Holcomb, and senator Randy Frye via INDOT) is a 2 lane highwway that runs through our area. This project
-                        is advertised as an improvement in our area for: safety, economic, and convenience purposes. On INDOT's website, this project looks essential, and wanted.
-                        This is untrue.
-                    </p>
-                    <p class="text-center">
-                        Many hundreds of people have been to the meetings that INDOT has been holding since last spring, and almost every person there is against this.
-                        It is an overwhelming majority. This highway will destroy our rural economy in favor of a suburban economy. There are farms and homesteads that have
-                        been in people''s families since the 1800s that could be destroyed along these proposed routes. The people in Dearborn, Ripley, Ohio, and Switzerland counties
-                        are not just opposed to this project, they are devastated.
-                    </p>
-                    <p class="text-center">
-                        If you look at INDOT questionaires regarding this project, they ask you to choose your preferred route. Nowhere do they list "no build" as an option.
-                    </p>
-                    <p class="text-center">
-                        They leave you to fill that in under "other". Not only that, but in their data reflected from these meetings, they are supposed to tabulate people who choose "no build".
-                        If you didn't fill out the form specifically the way they want, and only left a negative commend, your input wasn't tabulated in the data.
-                        Instead, it is put at the back of a 400 page report, in the "comments sections".
-                    </p>
-                    <p class="text-center">
-                        This is by design. The real data isn't being shown. The people of the area aren't being represented. This is entirely un-American, and unacceptable.
-                        We are a group dedicated to exposing the duplicitous nature of what is being proposed in our small towns. Ripping up homes, homesteads and family farms
-                        for a secrete private stakeholder that has yet to be identified, is a misuse of eminent domain. We will not stand for this misuse of government power. The
-                        key steakholders should be the public, and we have spoken. They will not run this project through our town. Not now, not ever.
-                        Thank you for your support!
-                    </p>
-                </div>
-                <div class="text-center" id="#budget" hidden>
-                    <img src="assets/BudgetGraph.png" class=" img-fluid rounded mx-auto d-block" width="500" height="600" />
-                    <br />
-                </div>
-                <div class="text-center" id="#signs" hidden>
-
-                    <div class="cardRow d-flex align-items-center justify-content-center">
-                        <div class="cardColumn">
-                            <div class="card">
-                                <h3 class="cardText">9/23/2023</h3>
-                                <p class="cardText">Walmart parking Lot, <a href="https://maps.app.goo.gl/WdqFZT1VUkY2LwRf6">Aurora, Indiana</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardRow d-flex align-items-center justify-content-center">
-                        <div class="cardColumn">
-                            <div class="card">
-                                <h3 class="cardText">9/30/2023</h3>
-                                <p class="cardText">Aldai Parking Lot, <a href="https://maps.app.goo.gl/2ECeeev7XWt4SpM58">Aurora Indiana </a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center" id="#testimonials" hidden>
-                    <br />
-                    <iframe class="youtube-video" src="https://www.youtube.com/embed/dGcw17aAutQ?si=VEUTpwFYFcF48BEx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-                <div class="text-center" id="#upcoming" hidden>
-                    <br />
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <strong>Event #1</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>Event #1</strong> It is shown by default, because this is the most recent event
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <strong>Event #2</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is event #2.</strong> It is hidden by default
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <strong> Event #3</strong>
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>Event #3</strong> It is hidden by default
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-                    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-                    crossorigin="anonymous"></script>
-            <script type="text/javascript" src="main.js"></script>
         </div>
-    </body>
+    </nav>
+    <div class="fluid-container">
+        <div class="page-header">
+            <h1 id="#header" class="text-center">About</h1>
+        </div>
+    </div>
+    <div id="#about">
+        <p class="text-center">
+            Northwest Dynamics, Inc. (NDI) is a design, development, and manufacturing company.
+
+            AS9100D, FAA Repair Station, and EASA Certified.
+
+            NDI specializes in hydro-mechanical actuators, fluidic control valves, rotor brakes, and directional control valves.
+
+            NDI has been in business for over 30 years and is located in Vancouver, WA.
+        </p>
+    </div>
+
+    <div id="#services" hidden>
+        <p class="text-center">Services text</p>
+    </div>
+
+    <div id="#certifications" hidden>
+
+        <p class="text-center">Certifications text</p>
+    </div>
+
+    <div id="#contact" hidden>
+        <p class="text-center">Contact stuff</p>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
 </html>
