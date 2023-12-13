@@ -84,7 +84,7 @@ const getContent = async (elementId) =>
     element.hidden = false;
     element.className = "fade-in-text";
     let header = document.getElementById('#header');
-    header.textContent = headerDict[idList[targetLink]];
+    header.innerHTML = `<b>${headerDict[idList[targetLink]]}<b>`;
     header.className = "text-center fade-in-text";
 
 

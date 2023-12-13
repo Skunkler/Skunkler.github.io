@@ -5,11 +5,16 @@ nav {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+
 .page-header
 {
     margin-top: 15%;
 }
 
+main{
+  flex: 1;
+  overflow: auto;
+}
 
 p, label, h1 {
     color: black;
@@ -17,6 +22,11 @@ p, label, h1 {
 
 h1, a {
     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1{
+    
+    text-shadow: 2px 2px #CCCCCC;
 }
 
 .navbarBrandFont 
@@ -27,6 +37,7 @@ h1, a {
 
 .robofont {
     font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px #CCCCCC;
 }
 
  nav a {
@@ -60,6 +71,7 @@ nav a:hover {
 .fade-in-text {
     animation: fadeIn 1s;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -70,47 +82,37 @@ nav a:hover {
     }
 }
 
-div.slide-up {
-    height: 200px;
-}
 
-body
+html, body
 {
+    height: 100%;
+    margin: 0;
     overflow-y: scroll;
     z-index: -1;
+    background-color: #E8E8E8;
 }
     
+.wrapper
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
 .form-horizontal {
     margin-left: 25%;
     margin-right: 25%;
 }
 
-/*footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+.containerFooter{
     background-color: white;
-  }*/
-  .footer {
-
-    height:24px; 
-    background-image: none;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-position: 0% 0%;
-    position: fixed;
-    bottom: 0pt;
-    left: 0pt;
-
-}   
-
-.footer_contents {
-
-    height:24px; 
-    margin:auto;
-
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 8px 2px 8px 5px rgba(0, 0, 0, 0.5);
+    bottom: 0px;
+    left: 0px;
+    position: sticky;
 }
 
 .navMenu
