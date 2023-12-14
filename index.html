@@ -25,6 +25,7 @@
 
 </head>
 <body>
+    <header>
     <nav class="navbar navbar-expand-lg navbar-light navbar-bg-light navMenu">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,16 +39,18 @@
             </div>
         </div>
     </nav>
-    <main>
-        
-    <div class="wrapper">
+</header>
+    <main>    
     <div class="fluid-container">
         <div class="page-header">
-            <h1 id="#header" class="text-center"><b>About</b></h1>
+            <h1 class="text-center" style="color: transparent;"><b>About</b></h1>
+            <br/>
         </div>
         </div>  
-        <div class="content">
-    <div id="#about">
+    <section id="#about" class="content">
+        <div class="page-header">
+            <h1 class="text-center"><b>About</b></h1>
+        </div>
         <img src="./assets/helicopter.webp" class="img-fluid mx-auto d-block" style="width: 60%; height: auto;" alt="Responsive image">
         <p class="text-center form-horizontal">
             Northwest Dynamics, Inc. (NDI) is an AS9100D certified company that has
@@ -60,17 +63,49 @@
         <img src="assets\EASA_Cert.webp" id="#EASA_CERT" alt="NDI intro image" />
         <img src="assets\FAA_CERT.webp" id="#FAA_CERT" alt="NDI intro image" />
     </div>
-    </div>
+</section>
 
-    <div id="#services" hidden>
-        <div class="row d-flex justify-content-center">
-            <div id="demo" class="carousel slide carousel-fade" style="height:auto; width:300px" data-bs-ride="carousel">
+    <section id="#services" hidden class="content">
+        <div class="page-header">
+            <h1 class="text-center"><b>Services</b></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/image001 (1).jpg" class="rounded-circle img-fluid"/>
+            </div>
+            <div class="col-md-6">
+                <h4>Projects</h4>
+                <p class="text-muted">
+                    NDI management recognizes that continual product quality and customer satisfaction can only be sustained by effective operation of the various related business processes within an organization. Therefore, NDI has adopted the process approach to manage the various functions within the organization by establishing and implementing a Business and Quality Management System described in this manual.
+
+                    The eight quality management principles (Figure 1) are embraced by NDI management and are used by the organization to lead toward continual improvement.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4>Business</h4>
+                <p class="text-muted">
+                    NDI is an engineering and manufacturing aerospace company with a product portfolio that includes proprietary landing gear system, actuator, valve, damper, and rotor brake designs.  
+                    Having been approached with several new business opportunities, NDI remains very selective and focuses on only a small percentage of programs that are deemed most appropriate and viable.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/image001 (2).jpg" class="rounded-circle img-fluid">
 
             </div>
+            <div class="col-md-6">
+                <img src="assets/image001.jpg" class="rounded-circle img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h4>ipsum lorem</h4>
+                <p>o preserve core skills and remain flexible, NDI has developed a low overhead structure centered on the key functions of engineering, quality assurance, production control, production machining and assembly and test.  NDI utilized a comfortable mix of in-house machining and subcontracted operations of various components. This approach yields a very efficient business model with the ability to quickly expand or contract based on the business climate of the industry. This model has proven to be very successful with NDI weathering numerous recessions as well as the recent unprecedented pandemic.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="#contact" hidden>
+    <section id="#contact" hidden class="content">
+        <div class="page-header">
+            <h1 class="text-center"><b>Contact</b></h1>
+        </div>
         <form class="form-horizontal" action="?" method="post">
             <!-- Name input -->
             
@@ -98,17 +133,15 @@
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
         </form>
-        </div>
-    </div>
-</div>
+    </section>
+    
 </main>
-<footer class="containerFooter">
-    <div class="flex-shrink-0 align-items-center py-3 border-top">
+<footer class="containerFooter flex-shrink-0 align-items-center py-3 border-top">
+    
         <div class="footer_contents">
             <div class="text-center align-items-center">
                 <span class="mb-3 mb-md-0 text-muted navbarBrandFont">© 2023 Northwest Dynamics Inc</span>
             </div>
-        </div>
     </div>
 </footer>
 </body>

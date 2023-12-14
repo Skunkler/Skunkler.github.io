@@ -28,13 +28,12 @@ const transition = async (prevElem) =>
     var prevDiv = document.getElementById(idList[idx]);
     prevDiv.className = "hidden";
 
-    document.getElementById('#header').className = "text-center hidden";
-    await delay(1000);
+    //document.getElementById('#header').className = "text-center hidden";
+    
 }
 
 const selectedLink = async (originatingElem, elementId) =>
 {
-    window.scrollTo(0,0);
     const prevElem = document.getElementsByClassName("selectedLink")[0];
     
     if (prevElem != null) {
@@ -44,10 +43,9 @@ const selectedLink = async (originatingElem, elementId) =>
     {
         await transition(document.getElementById("#aboutLink"));
     }
-    
-
+    window.scrollTo(0,0);
     originatingElem.className = "nav-item nav-link selectedLink";
-    getContent(elementId);
+    await getContent(elementId);
 }
 const headerDict = {
     "#about": "About", "#services": "Services",
@@ -79,14 +77,12 @@ const getContent = async (elementId) =>
 
     })
 
-
     const element = document.getElementById(idList[targetLink]);
     element.hidden = false;
     element.className = "fade-in-text";
-    let header = document.getElementById('#header');
-    header.innerHTML = `<b>${headerDict[idList[targetLink]]}<b>`;
-    header.className = "text-center fade-in-text";
-
+    //let header = document.getElementById('#header');
+    //header.innerHTML = `<b>${headerDict[idList[targetLink]]}<b>`;
+    //header.className = "text-center";
 
 }
 

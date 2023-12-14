@@ -3,19 +3,13 @@ nav {
     padding: 24px;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 9;
 }
 
-
-.page-header
-{
-    margin-top: 15%;
+.page-header{
+    margin-top: auto;
 }
-
-main{
-  flex: 1;
-  overflow: auto;
-}
-
 p, label, h1 {
     color: black;
 }
@@ -56,6 +50,11 @@ h1{
     font-weight: bold;
 }
 
+.hidden
+{
+    display: none;
+}
+
 nav a:hover {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
@@ -82,22 +81,22 @@ nav a:hover {
     }
 }
 
+body{
+    height: 100%;
+}
 
+html {
+    height: 100%;
+    overflow: auto;
+}
 html, body
 {
-    height: 100%;
     margin: 0;
-    overflow-y: scroll;
+    overflow-x: hidden;
     z-index: -1;
     background-color: #E8E8E8;
 }
-    
-.wrapper
-{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .form-horizontal {
     margin-left: 25%;
@@ -110,9 +109,7 @@ html, body
     left: 0;
     width: 100%;
     box-shadow: 8px 2px 8px 5px rgba(0, 0, 0, 0.5);
-    position:  absolute;
 }
-
 .navMenu
 {
     width: 100%;
