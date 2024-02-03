@@ -7,9 +7,19 @@ nav {
     z-index: 9;
 }
 
-.page-header{
+.page-header
+{
     margin-top: auto;
 }
+
+section
+{
+    padding-top: 70px;
+    padding-bottom: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 p, label, h1 {
     color: black;
 }
@@ -109,7 +119,7 @@ html, body
     left: 0;
     width: 100%;
     box-shadow: 8px 2px 8px 5px rgba(0, 0, 0, 0.5);
-    position: relative;
+    position: absolute;
 }
 .navMenu
 {
