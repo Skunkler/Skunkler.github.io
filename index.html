@@ -25,14 +25,19 @@
         width: 100%;
 
       }
-      .rowCardClass
+      /*.rowCardClass
       {
         margin-top: 5%;
-      }
+      }*/
       body
       {
         overflow-x: none !important;
         overflow-y: none !important;
+      }
+
+      .col
+      {
+        margin-bottom: 4%;
       }
 
 *{
@@ -720,7 +725,7 @@ span:before {
     const loadUpcomingCandidatesPage = async () =>
     {
         //let response = await fetch("https://raw.githubusercontent.com/Skunkler/Link101Stuff/main/Candidates.json");
-        let response = await fetch("https://raw.githubusercontent.com/Skunkler/Link101Stuff/main/Candidates2.json");
+        let response = await fetch("https://raw.githubusercontent.com/Skunkler/Link101Stuff/main/Candidates3.json");
         candidates = await response.json();
         let targetContainer = document.getElementById("CandidateCardsContainer");
         
